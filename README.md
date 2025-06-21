@@ -1,5 +1,12 @@
 Diperlukan untuk melakukan beberapa command untuk aplikasi ini, dikarenakan saya menggunakan beberapa library dari radix.
-Namun sudah dicantumkan semua dalam package-lock.json
+Namun sudah dicantumkan semua dalam package-lock.json.
+
+Sama pastikan port untuk json-server adalah 5000 (http://localhost:5000) karena sudah saya setting di lib/api.ts.
+Begitu pula di context/AuthContext.tsx (http://localhost:5000/users)
+Jadi ada port normal 3000 sama port json-server 5000.
+
+Untuk autentikasi bisa bekerja jadi pengguna tidak bisa masuk halaman dashboard dengan langsung mengetikan localhost:3000/dashboard.
+Jika demikian akan langsung diarahkan ke halaman sign in. Karena diperlukan sign in untuk mengakses halaman kedua role.
 
 npm install lucide-react
 npm install @radix-ui/react-accordion
